@@ -155,3 +155,27 @@ body{
     font-size: 55px;
     margin-right: 15px;
 }
+
+@media (max-width: 1080px){
+    .center, a{
+        font-size: 10vw;
+    }
+
+    h1{
+        font-size: 4vh;
+    }
+
+    #buttons{
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 25px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 40%;
+        min-width: 600px;
+        margin: auto;
+    }
+}
