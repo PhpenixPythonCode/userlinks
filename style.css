@@ -1,0 +1,157 @@
+:root{
+    --primary: #fff;
+    --secondary: #000;
+}
+
+.light-mode{
+    --primary: #000;
+    --secondary: #fff;
+}
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--primary);
+    z-index: 10000;
+}
+
+h1{
+    font-size: 70px;
+}
+
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--secondary);
+    margin: 15px;
+    padding: 8px 24px;
+    background-color: var(--primary);
+    border-radius: 6px;
+    border: 3px solid transparent;
+    transition: 300ms background-color 100ms, 300ms color 100ms, 300ms border 100ms;
+    min-width: fit-content;
+}
+
+a:hover{
+    background-color: transparent;
+    color: var(--primary);
+    border: 3px solid var(--primary);
+}
+
+body{
+    user-select: none;
+    background-color: var(--secondary);
+    cursor: none;
+    overflow: hidden;
+    font-family: 'Century Gothic';
+}
+
+*{
+    cursor: none;
+}
+
+.cursor1{
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    transition: 300ms opacity 100ms;
+    pointer-events: none;
+    z-index: 100000000;
+}
+.cursor2{
+    width: 30px;
+    height: 30px;
+    /* background-color: var(--primary); */
+    opacity: 0.4;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0s top, 0s left, 200ms width ease-in-out, 200ms height ease-in-out, 300ms opacity, 300ms border;
+    pointer-events: none;
+    transform-origin: center center;
+    transform: translate(-13px, -13px);
+    z-index: 100000000;
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 25px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 40%;
+    min-width: 600px;
+    margin: auto;
+}
+
+.shape{
+    background-color: var(--primary);
+    z-index: -1;
+    transition: 7s top, 7s opacity;
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 7s;
+    /* box-shadow: 1px 1px 6px 1px var(--primary); */
+}
+
+.shape-no{
+    background-color: var(--primary);
+    z-index: -1;
+    transition: 7s top, 7s opacity;
+    position: absolute;
+    opacity: 0;
+    /* box-shadow: 1px 1px 6px 1px var(--primary); */
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+#shapes{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.moving{
+    animation-name: moving;
+    animation-duration: 14s;
+}
+
+@keyframes moving{
+    0%{
+        bottom: -40vh;
+    }
+    100%{
+        bottom: 0;
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+@keyframes fade{
+    100%{
+        opacity: 0;
+    }
+}
+
+.settings{
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: right;
+    color: var(--primary);
+    padding: 15px;
+}
+
+.score{
+    font-size: 55px;
+    margin-right: 15px;
+}
