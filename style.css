@@ -47,7 +47,7 @@ body{
     background-color: var(--secondary);
     cursor: none;
     overflow: hidden;
-    font-family: 'Century Gothic';
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 *{
