@@ -71,7 +71,7 @@ body{
     opacity: 0.4;
     border-radius: 50%;
     position: absolute;
-    transition: 0s top, 0s left, 200ms width ease-in-out, 200ms height ease-in-out, 300ms opacity, 300ms border;
+    transition: 50ms top, 50ms left, 200ms width ease-in-out, 200ms height ease-in-out, 300ms opacity, 300ms border;
     pointer-events: none;
     transform-origin: center center;
     transform: translate(-13px, -13px);
