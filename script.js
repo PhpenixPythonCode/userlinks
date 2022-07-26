@@ -176,7 +176,7 @@ function startShapes(){
 
     setInterval(() => {
         createParticle()
-    }, 100)
+    }, 500)
 }
 
 function createShape(){
