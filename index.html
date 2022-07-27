@@ -30,7 +30,12 @@
 
     <div id="shapes"></div>
 
+    <div class="left">
+        <button onclick="toggleTheme()" style="width: 50px; padding: 0;margin: 0;background:none;border:none;outline:none; color: var(--primary);">Theme</button>
+    </div>
+
     <div class="settings">
+        
         <span class="score" id="score"></span>
         <button style="width: 50px; padding: 0;margin: 0;background:none;border:none;outline:none;" onclick="toggleMusic()">
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -71,6 +76,19 @@
 </svg>
 
         </button>
+    </div>
+
+    <div class="modal" id="modal" style="display: none;">
+        <h2 class="title">About me</h2>
+        <center>
+            <p id="desc" class="desc">
+                
+            </p>
+        </center>
+
+        <div class="corner">
+            <button onclick="closeModal()">x</button>
+        </div>
     </div>
 </body>
 </html>
