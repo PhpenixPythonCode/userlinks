@@ -1,6 +1,16 @@
 //You can edit these
-
+var discordID = '307919920820125698'
 var username = 'Pinapplekat'
+
+
+//HTML formatted vv
+var about = `
+Online, I go by the name 'Pinapplekat'. That is (hopefully obviously) not my real name. I am a (wannabe) fullstack web developer, started learning HTML at age 10, when I got a childrens book that taught web design. 
+<br><br>
+ You can view my GitHub projects by clicking the GitHub button.
+ <br> Wanna talk? Check out my Discord server or my Twitter!
+`
+
 const links = [
     {
         'name': 'YouTube',
@@ -16,11 +26,15 @@ const links = [
     },
     {
         'name': 'Discord',
-        'url': 'discord://click-me/users/307919920820125698'
+        'url': 'https://discord.gg/jqURvaA2nu'
     },
     {
         'name': 'Patreon',
         'url': 'https://patreon.com/elijahryerson'
+    },
+    {
+        'name': 'About',
+        'url': 'javascript:aboutModal()'
     }
 ]
 
@@ -28,8 +42,42 @@ const links = [
 
 //ACTUAL CODE vv
 
+var lightMode = localStorage.getItem('lightMode')
+if(lightMode == null) lightMode = false
+console.log(lightMode)
+if(lightMode == 'true'){
+    lightMode = true
+    document.body.classList = 'light-mode'
+}else{
+    lightMode = false
+    document.body.classList = ''
+}
+function toggleTheme(){
+    lightMode = !lightMode
+    localStorage.setItem('lightMode', lightMode)
+    if(lightMode == true){
+        document.body.classList = 'light-mode'
+    }else{
+        document.body.classList = ''
+    }
+}
 
 
+document.getElementById('desc').innerHTML = about
+
+function closeModal(){
+    document.getElementById('modal').style.display = 'none'
+}
+
+document.addEventListener('keydown', (e) => {
+    if(e.key == 'Escape'){
+        closeModal()
+    }
+})
+
+function aboutModal(){
+    document.getElementById('modal').style.display = ''
+}
 
 
 
@@ -265,3 +313,7 @@ myAudio.onplaying = function() {
 myAudio.onpause = function() {
   isPlaying = false;
 };
+
+document.getElementById('name').addEventListener('click', () => {
+    window.open('discord://click-me/users/'+discordID)
+})
