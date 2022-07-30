@@ -157,9 +157,7 @@ for (var i = 0; i < cusid_ele.length; ++i) {
     item.addEventListener('mouseover', (e) => {
         document.getElementById('cursor1').style.opacity = '1'
     document.getElementById('cursor2').style.opacity = ''
-        document.getElementById('cursor2').style.width = '50px'
-        document.getElementById('cursor2').style.height = '50px'
-        document.getElementById('cursor2').style.transform = 'translate(-21px, -21px)'
+        document.getElementById('cursor2').style.transform = 'scale(1.5) translate(-25%, -25%)'
         
     })
     item.addEventListener('mouseleave', (e) => {
@@ -183,9 +181,7 @@ for (var i = 0; i < cusid_ele.length; ++i) {
     item.addEventListener('mouseover', (e) => {
         document.getElementById('cursor1').style.opacity = '1'
     document.getElementById('cursor2').style.opacity = ''
-        document.getElementById('cursor2').style.width = '50px'
-        document.getElementById('cursor2').style.height = '50px'
-        document.getElementById('cursor2').style.transform = 'translate(-21px, -21px)'
+        document.getElementById('cursor2').style.transform = 'scale(1.5) translate(-25%, -25%)'
         
     })
     item.addEventListener('mouseleave', (e) => {
