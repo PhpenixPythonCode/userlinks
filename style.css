@@ -36,9 +36,10 @@ a, button{
     padding: 8px 24px;
     background-color: var(--primary);
     border-radius: 6px;
+    transform: scale(1);
     border: 3px solid transparent;
-    transition: 300ms background-color 100ms, 300ms color 100ms, 300ms border 100ms;
-    min-width: fit-content, 300ms transform 100ms;
+    transition: 300ms transform 100ms, 300ms background-color 100ms, 300ms color 100ms, 300ms border 100ms;
+    min-width: fit-content;
 }
 
 a:hover, button:hover{
@@ -77,10 +78,10 @@ body{
     opacity: 0.4;
     border-radius: 50%;
     position: absolute;
-    transition: 50ms top, 50ms left, 200ms width ease-in-out, 200ms height ease-in-out, 300ms opacity, 300ms border;
+    transition: 50ms top, 50ms left, 200ms transform ease-in-out, 200ms height ease-in-out, 300ms opacity, 300ms border;
     pointer-events: none;
     transform-origin: center center;
-    transform: translate(-13px, -13px);
+    transform: translate(-36%, -36%);
     z-index: 100000000;
 }
 
