@@ -207,7 +207,8 @@ body{
     text-align: center;
     user-select: default;
     transition: all 300ms;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .desc{
@@ -229,7 +230,8 @@ body{
 
 .open{
     backdrop-filter: blur(2px);
-    display: default;
+    pointer-events: auto;
+    opacity: 1;
 }
     
 
