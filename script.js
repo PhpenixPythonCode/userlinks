@@ -70,6 +70,7 @@ function closeModal(){
     document.getElementById('modal').classList.remove("open")
     document.getElementById('buttons').style.opacity = '1'
     document.getElementById('settings').style.opacity = '1'
+    document.getElementById('name').style.fontSize = '70px'
 }
 
 document.addEventListener('keydown', (e) => {
@@ -82,6 +83,7 @@ function aboutModal(){
     document.getElementById('modal').classList.add("open")
     document.getElementById('buttons').style.opacity = '0'
     document.getElementById('settings').style.opacity = '0'
+    document.getElementById('name').style.fontSize = '90px'
 }
 
 
