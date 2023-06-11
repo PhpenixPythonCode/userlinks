@@ -67,7 +67,7 @@ function toggleTheme(){
 document.getElementById('desc').innerHTML = about
 
 function closeModal(){
-    document.getElementById('modal').style.display = 'none'
+    document.getElementById('modal').classList.remove("open")
 }
 
 document.addEventListener('keydown', (e) => {
@@ -77,7 +77,7 @@ document.addEventListener('keydown', (e) => {
 })
 
 function aboutModal(){
-    document.getElementById('modal').style.display = ''
+    document.getElementById('modal').classList.add("open")
 }
 
 
