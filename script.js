@@ -8,8 +8,8 @@ var about = `
 Online, I go by the name 'Pinapplekat'. That is (hopefully obviously) not my real name. I am a (wannabe) fullstack web developer, started learning HTML at age 10, when I got a childrens book that taught web design. 
 <br><br>
  You can view my GitHub projects by clicking the GitHub button.
- <br><h3>Use code <b>Pinapplekat</b> in Epic Games or Fortnite store <a href="https://www.instagram.com/explore/tags/ad/">#ad</a></h3<br>
  <br> Wanna talk? Check out my Discord server or my Twitter!
+ <br><h3>Use code <b>Pinapplekat</b> in Epic Games or Fortnite store #ad</h3><br>
 `
 
 const links = [
