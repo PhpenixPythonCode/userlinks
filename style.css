@@ -18,9 +18,6 @@
     color: var(--primary);
     z-index: 10000;
 }
-#name{
-    300ms font-size 100ms;
-}
 h1{
     font-size: 70px;
     transition: 200ms transform 100ms;
