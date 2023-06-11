@@ -205,6 +205,7 @@ body{
     z-index: 10000000;
     text-align: center;
     user-select: default;
+    transition: transform 300ms;
 }
 
 .desc{
@@ -222,6 +223,11 @@ body{
     color: var(--primary);
     font-size: 3vh;
 }
+
+.open{
+    transform: translateY(-100vh);
+}
+    
 
 
 @media (max-width: 1080px){
