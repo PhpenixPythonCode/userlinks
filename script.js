@@ -68,6 +68,8 @@ document.getElementById('desc').innerHTML = about
 
 function closeModal(){
     document.getElementById('modal').classList.remove("open")
+    document.getElementById('buttons').style.opacity = '1'
+    document.getElementById('settings').style.opacity = '1'
 }
 
 document.addEventListener('keydown', (e) => {
@@ -78,6 +80,8 @@ document.addEventListener('keydown', (e) => {
 
 function aboutModal(){
     document.getElementById('modal').classList.add("open")
+    document.getElementById('buttons').style.opacity = '0'
+    document.getElementById('settings').style.opacity = '0'
 }
 
 
