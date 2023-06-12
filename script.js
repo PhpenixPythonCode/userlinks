@@ -25,7 +25,7 @@ const links = [
     },
     {
         'name': 'Instagram',
-        'url': 'https://twitter.com/elijahryerson'
+        'url': 'https://instagram.com/elijahryerson'
     },
     {
         'name': 'GitHub',
