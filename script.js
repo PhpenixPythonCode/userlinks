@@ -6,8 +6,8 @@ var username = 'Pinapplekat'
 //HTML formatted vv
 var about = `
     &nbsp;Online, I go by the name 'Pinapplekat'. That is (hopefully obviously) not my real name. I am a wannabe fullstack web developer, started learning HTML at age 10, when I got a childrens book that taught web design. After that I would spent hours after hours on the computer typing and typing away, watching YouTube tutorials, and fixing problems. I watched so much tutorials I ended up fluent in some programming languages, such as JavaScript (+ other web design languages), Lua, Python, and more.
-    <br>&nbsp;I eventually got into the hit game "Fortnite" and made tons of friends on there. I made a ton of Fortnite maps, even gaining a steady income for a couple months when I was 13. I started streaming and making YouTube content (I even got a creator code!), in wich one video would go ahead and gain 100k+ views, which I am not proud of. The video is not what I would want to be known for. I ended up gaining a couple hundred followers, and after a few years; I just kind of gave up on streaming and everything. A couple months later I just quit Fortnite entirely. It was something I'm actually rather proud of, since it was such a huge addiction and was infact hurting me. It would take my mind off of things such as school and self-hygiene. I failed multiple classes in that year.
-    <br>&nbsp;Ever since I quit Fortnite I was just happier. I worked on myself a ton, started working out (I was 5'11 wighing 120lb). Even though I have been much healthier and active, I still haven't been gaining a ton of muscle, weighing around 125-130lb at 6'0. I would call myself underweight, but I'm not gonna let that stop me from working hard to try even harder to get where I want to be in life. I've been working on my grades, too. I discovered I'm actually pretty good at mental algebra. I still have trouble waking up on time for school, so I miss most of 1st period. I am surprisingly not failing 1st period.
+    <br><br>&nbsp;I eventually got into the hit game "Fortnite" and made tons of friends on there. I made a ton of Fortnite maps, even gaining a steady income for a couple months when I was 13. I started streaming and making YouTube content (I even got a creator code!), in wich one video would go ahead and gain 100k+ views, which I am not proud of. The video is not what I would want to be known for. I ended up gaining a couple hundred followers, and after a few years; I just kind of gave up on streaming and everything. A couple months later I just quit Fortnite entirely. It was something I'm actually rather proud of, since it was such a huge addiction and was infact hurting me. It would take my mind off of things such as school and self-hygiene. I failed multiple classes in that year.
+    <br><br>&nbsp;Ever since I quit Fortnite I was just happier. I worked on myself a ton, started working out (I was 5'11 wighing 120lb). Even though I have been much healthier and active, I still haven't been gaining a ton of muscle, weighing around 125-130lb at 6'0. I would call myself underweight, but I'm not gonna let that stop me from working hard to try even harder to get where I want to be in life. I've been working on my grades, too. I discovered I'm actually pretty good at mental algebra. I still have trouble waking up on time for school, so I miss most of 1st period. I am surprisingly not failing 1st period.
 <br><br>
     &nbsp;You can view my GitHub projects by clicking the GitHub button.
     <br>&nbsp;Wanna talk? Check out my Discord server or my Twitter!
@@ -22,6 +22,10 @@ const links = [
     {
         'name': 'Twitter',
         'url': 'https://twitter.com/tpinapplekat'
+    },
+    {
+        'name': 'Instagram',
+        'url': 'https://twitter.com/elijahryerson'
     },
     {
         'name': 'GitHub',
