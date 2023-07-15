@@ -25,7 +25,7 @@ const links = [
     },
     {
         'name': 'Instagram',
-        'url': 'https://instagram.com/elijahryerson'
+        'url': 'https://instagram.com/pinapplekat'
     },
     {
         'name': 'GitHub',
@@ -34,10 +34,6 @@ const links = [
     {
         'name': 'Discord',
         'url': 'https://discord.gg/jqURvaA2nu'
-    },
-    {
-        'name': 'Patreon',
-        'url': 'https://patreon.com/elijahryerson'
     },
     {
         'name': 'About',
